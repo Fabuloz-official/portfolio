@@ -50,10 +50,6 @@ h2{font-size:1rem;font-weight:600;color:var(--mute);margin:0 0 1.2rem}
 .skills b{font-weight:600}
 .skills span{color:var(--mute);font-size:.92rem}
 .contact p{max-width:46ch;color:var(--mute);margin:0 0 1.2rem}
-.links{display:flex;flex-wrap:wrap;gap:.6rem;margin:0 0 1.4rem}
-.links a{text-decoration:none;border:1px solid var(--line);border-radius:99px;padding:.45rem 1rem;font-weight:600;font-size:.92rem;transition:background .25s,color .25s,border-color .25s}
-.links a:hover{background:var(--fg);color:var(--bg);border-color:var(--fg)}
-.fur{margin:1.4rem 0 0;color:var(--mute);max-width:52ch}
 .discord{all:unset;cursor:pointer;display:inline-block;border:1px solid var(--fg);border-radius:99px;padding:.55rem 1.2rem;font-weight:600;transition:background .25s,color .25s}
 .discord:hover{background:var(--fg);color:var(--bg)}
 @media (max-width:640px){.hero{grid-template-columns:1fr}.hero img{width:160px;order:-1}}
@@ -82,7 +78,6 @@ h2{font-size:1rem;font-weight:600;color:var(--mute);margin:0 0 1.2rem}
 <section class="about">
  <h2 data-i="about">À propos</h2>
  <p data-i="ab">Je m’appelle Fabuloz. Je crée des vidéos, des applications web, des sites et des extensions Chrome. J’aime les outils simples qui servent vraiment, surtout pour les élèves.</p>
- <p class="fur" data-i="fur">Je suis aussi furry 🐾 : c’est une communauté que j’aime, et elle fait partie de qui je suis.</p>
  <ul class="skills">
   <li><b data-i="s1">Montage vidéo</b><span data-i="s1d">Clips et vidéos pour les réseaux sociaux</span></li>
   <li><b data-i="s2">Applications web</b><span data-i="s2d">Des outils utiles, faciles à prendre en main</span></li>
@@ -112,19 +107,14 @@ h2{font-size:1rem;font-weight:600;color:var(--mute);margin:0 0 1.2rem}
 <section class="contact">
  <h2 data-i="contact">Contact</h2>
  <p data-i="cp">Un projet ? Écris-moi sur Discord pour qu’on en discute.</p>
- <div class="links">
-  <a href="https://www.youtube.com/@FabulozMonteur" target="_blank" rel="noopener">YouTube</a>
-  <a href="https://www.instagram.com/fabuloz_off/" target="_blank" rel="noopener">Instagram</a>
-  <a href="https://discord.com/users/942012485802811422" target="_blank" rel="noopener">Discord</a>
- </div>
  <button class="discord" id="dc" data-copy="Fabuloz#8975">Fabuloz#8975</button>
 </section>
 </div>
 
 <script>
 var T={
- fr:{bio:"Monteur vidéo et créateur d’apps web et de sites. Lycéen en première pro.",work:"Projets",p1:"Application web",p2:"Extension Chrome",p3t:"Montage vidéo",p3:"Voir sur Instagram",d1:"Plateforme de partage de flashcards pour réviser la 3ème et le brevet.",d2:"Bloque les sites qui distraient pendant tes sessions de travail, avec des profils illimités. Plus de 30 utilisateurs.",d3:"Un exemple de mes montages vidéo.",about:"À propos",contact:"Contact",cp:"Un projet ? Écris-moi sur Discord pour qu’on en discute.",copied:"Copié !",doc:"Fabuloz",fur:"Je suis aussi furry 🐾 : c’est une communauté que j’aime, et elle fait partie de qui je suis."},
- en:{bio:"Video editor and creator of web apps and websites. Vocational high school student (11th grade).",work:"Work",p1:"Web app",p2:"Chrome extension",p3t:"Video editing",p3:"Watch on Instagram",d1:"A flashcard-sharing platform to revise 3rd year and the brevet.",d2:"Blocks distracting websites during study sessions, with unlimited profiles. 30+ users.",d3:"An example of my video editing work.",about:"About",contact:"Contact",cp:"Got a project? Message me on Discord and we’ll talk.",copied:"Copied!",doc:"Fabuloz",fur:"I’m also a furry 🐾 : it’s a community I love, and it’s part of who I am."}
+ fr:{bio:"Monteur vidéo et créateur d’apps web et de sites. Lycéen en première pro.",work:"Projets",p1:"Application web",p2:"Extension Chrome",p3t:"Montage vidéo",p3:"Voir sur Instagram",d1:"Plateforme de partage de flashcards pour réviser la 3ème et le brevet.",d2:"Bloque les sites qui distraient pendant tes sessions de travail, avec des profils illimités. Plus de 30 utilisateurs.",d3:"Un exemple de mes montages vidéo.",about:"À propos",contact:"Contact",cp:"Un projet ? Écris-moi sur Discord pour qu’on en discute.",copied:"Copié !",doc:"Fabuloz"},
+ en:{bio:"Video editor and creator of web apps and websites. Vocational high school student (11th grade).",work:"Work",p1:"Web app",p2:"Chrome extension",p3t:"Video editing",p3:"Watch on Instagram",d1:"A flashcard-sharing platform to revise 3rd year and the brevet.",d2:"Blocks distracting websites during study sessions, with unlimited profiles. 30+ users.",d3:"An example of my video editing work.",about:"About",contact:"Contact",cp:"Got a project? Message me on Discord and we’ll talk.",copied:"Copied!",doc:"Fabuloz"}
 };
 var cur="fr";
 function apply(l){
