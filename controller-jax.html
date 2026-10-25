@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Fabuloz — Controller Jax</title>
+  <meta name="description" content="Connecte-toi au Wi‑Fi Jax Tadc et ouvre 192.168.4.1.">
+  <style>
+    :root {
+      --bg:#f3f1ec; --surface:#ffffff; --text:#1d2a30; --muted:#5b6b72; --accent:#2f8f8a; --accent2:#b5784a; --border:#dcd8cf; --on-accent:#ffffff;
+      box-sizing:border-box;
+      color-scheme:light;
+    }
+    * { box-sizing:border-box; }
+    body {
+      margin:0;
+      min-height:100vh;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(180deg, var(--bg), #efeae4);
+      color:var(--text);
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height:1.6;
+      padding:24px;
+    }
+    .card {
+      width:min(100%, 760px);
+      background:var(--surface);
+      border:1px solid var(--border);
+      border-radius:22px;
+      box-shadow:0 18px 60px rgba(28, 38, 44, 0.12);
+      padding:clamp(1.5rem, 3vw, 2.5rem);
+    }
+    .badge {
+      display:inline-block;
+      padding:.45rem .8rem;
+      border-radius:999px;
+      background:color-mix(in srgb, var(--accent) 12%, white);
+      color:var(--accent);
+      font-weight:700;
+      letter-spacing:.03em;
+      text-transform:uppercase;
+      font-size:.78rem;
+    }
+    h1 {
+      margin:1rem 0 .5rem;
+      font-size:clamp(2rem, 6vw, 3.4rem);
+      line-height:1.1;
+    }
+    p {
+      margin:0 0 1rem;
+      color:var(--muted);
+      font-size:1.06rem;
+    }
+    .step {
+      display:flex;
+      gap:.9rem;
+      align-items:flex-start;
+      padding:1rem 1.1rem;
+      background:var(--bg);
+      border:1px solid var(--border);
+      border-radius:14px;
+      margin-top:.9rem;
+    }
+    .step-number {
+      flex:none;
+      width:2.1rem;
+      height:2.1rem;
+      display:grid;
+      place-items:center;
+      border-radius:50%;
+      background:var(--accent2);
+      color:var(--on-accent);
+      font-weight:700;
+    }
+    .link-box {
+      margin-top:1.25rem;
+      padding:1rem 1.1rem;
+      border:2px solid var(--accent);
+      border-radius:14px;
+      background:color-mix(in srgb, var(--accent) 8%, white);
+    }
+    a.button {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:.8rem 1.2rem;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:700;
+      transition:transform .15s ease;
+    }
+    a.button.primary {
+      background:var(--accent);
+      color:var(--on-accent);
+      margin-right:.75rem;
+      margin-top:.75rem;
+    }
+    a.button.secondary {
+      background:transparent;
+      color:var(--accent);
+      border:2px solid var(--accent);
+      margin-top:.75rem;
+    }
+    a.button:hover { transform:translateY(-2px); }
+    .small {
+      font-size:.92rem;
+      color:var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="badge">Controller Jax</div>
+    <h1>Connecte-toi au Wi‑Fi Jax Tadc</h1>
+    <p>Pour utiliser le contrôleur, il faut d’abord te connecter au réseau Wi‑Fi <strong>Jax Tadc</strong>.</p>
+
+    <div class="step">
+      <div class="step-number">1</div>
+      <div>
+        <strong>Connecte-toi au Wi‑Fi</strong><br>
+        <span class="small">Réseau : <strong>Jax Tadc</strong></span>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">2</div>
+      <div>
+        <strong>Ouvre ce lien</strong><br>
+        <span class="small">http://192.168.4.1</span>
+      </div>
+    </div>
+
+    <div class="link-box">
+      <strong>URL du contrôleur :</strong><br>
+      <a class="button primary" href="http://192.168.4.1" target="_blank" rel="noopener noreferrer">Ouvrir 192.168.4.1</a>
+      <a class="button secondary" href="index.html">Retour à l'accueil</a>
+    </div>
+  </main>
+</body>
+</html>
